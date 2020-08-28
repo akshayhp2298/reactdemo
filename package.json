@@ -8,9 +8,10 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.2",
     "react": "^16.13.1",
+    "react-autocomplete": "^1.8.1",
+    "react-bootstrap-typeahead": "^5.1.1",
     "react-dom": "^16.13.1",
     "react-file-reader": "^1.1.4",
-    "react-google-places-autocomplete": "^3.0.0-alpha.1",
     "react-multiple-image-input": "^1.0.0",
     "react-scripts": "3.4.3",
     "react-tabs": "^3.1.1"

@@ -4,22 +4,22 @@ export default (props) => {
   const [isCSV, changeCSV] = useState(false);
   const handleFiles = async (files) => {
     var reader = new FileReader();
-    let doc={}
-    reader.onload = await function (e) {
+    let doc= {}
+    reader.onload = async (e)=> {
       // Use reader.result
-      const data = reader.result
+      const data = await reader.result
       const string = data.split('\n')[0].split(' ')
       doc = {
-          address:string[0],
-          bedRoom:string[1],
-          bathRoom:string[2],
-          description:string[3]
+        address:string[0],
+        bedRoom:string[1],
+        bathRoom:string[2],
+        desc:string[3]
       }
-
+      props.setDoc(doc)
+      props.handleChange(2);
     };
-    console.log(doc)
-    props.handleChange(2);
-    reader.readAsText(files[0]);
+    const tmp = await reader.readAsText(files[0]);
+    console.log(tmp)
   };
   return (
     <div>

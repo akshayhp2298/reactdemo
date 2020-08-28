@@ -1,14 +1,12 @@
 import React from 'react';
-import Header from './Component/Header'
-import HOC from './Component/HOC'
+import DashBoard from './Component/DashBoard'
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <HOC tabIndex={0}/>
+      <DashBoard />
     </div>
   );
 }

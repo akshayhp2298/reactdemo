@@ -25,8 +25,16 @@ class StepThree extends React.Component {
     } else alert("you've completed");
   }
   render() {
+    console.log(this.props.details)
     return (
       <div>
+        <div>
+          
+          {this.props.details.address}
+          {this.props.details.bedRoom}
+          {this.props.details.bathRoom}
+          {this.props.details.desc}
+        </div>
         <MultiImageInput
           images={this.state.pictures}
           max={4}
